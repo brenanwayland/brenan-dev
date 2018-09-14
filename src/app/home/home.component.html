@@ -1,0 +1,15 @@
+<div class="sub-page-container">
+    <div class="card-row">
+        <mat-card *ngFor="let page of featuredPages" class="card-row-item">
+            <img mat-card-image src={{page.image}}>
+            <mat-card-title class="center-text">{{ page.title | uppercase }}</mat-card-title>
+            <mat-card-content class="center-text">{{ page.content }}</mat-card-content>
+            <mat-card-actions class="card-row-item-actions">
+                <div class="spacer"></div>
+                <div class="card-row-item-button">
+                    <button mat-stroked-button class="mat-primary">{{ page.buttonText }}</button>
+                </div>
+            </mat-card-actions>
+        </mat-card>
+    </div>
+</div>

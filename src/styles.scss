@@ -1,18 +1,21 @@
-@import "~@angular/material/prebuilt-themes/indigo-pink.css";
-@import url('https://fonts.googleapis.com/css?family=Questrial|Cairo');
-
-
-@import '~@angular/material/theming';
-
-$custom-typography: mat-typography-config(
-  $font-family: 'Cairo, sans-serif',
-  $headline: mat-typography-level(32px, 48px, 700),
-  $body-1: mat-typography-level(16px, 24px, 500)
-);
-
-@include angular-material-typography($custom-typography);
-
 .page-container {
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sub-page-container {
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.nav-btn {
+    font-size: 12pt;
 }
 
 .header-container {
@@ -20,29 +23,69 @@ $custom-typography: mat-typography-config(
 }
 
 .page-header {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    padding-top: 20px;
+    margin: 0px,0px,0px,0px;
 }
 
 .page-subheader {
+    margin-top: 0px;
 }
 
 .logo {
     //float: center;
 }
 
-.container {
-
-}
-
 .column {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
 }
 
 .row {
     flex-direction: row;
+}
+
+.card-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.card-row-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 350px;
+    height: auto;
+}
+
+.card-row-item span {
+    text-align: center;
+}
+
+.card-row-item-actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.card-row-item-button {
+    flex-grow: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: flex-end;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.justified-text {
+    text-align: justify;
 }
